@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  padding: 2rem;
+  color: #333;
+}
+
+/* ── Header ── */
+header {
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  color: #1a56db;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* ── Section label ── */
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 1.25rem 0 0.5rem;
+}
+
+/* ── Grid layouts ── */
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Cards ── */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+}
+
+.card .val {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a56db;
+}
+
+.card .lbl {
+  font-size: 0.78rem;
+  color: #999;
+  margin-top: 4px;
+}
+
+.card .sub {
+  font-size: 0.72rem;
+  color: #bbb;
+  margin-top: 2px;
+}
+
+.card.green .val {
+  color: #276749;
+}
+
+.card.gray .val {
+  color: #4a5568;
+}
+
+/* ── Decision Support ── */
+.decision {
+  border-radius: 14px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+}
+
+.decision.tinggi {
+  background: #fff5f5;
+  border-left: 5px solid #fc8181;
+}
+
+.decision.normal {
+  background: #f0fff4;
+  border-left: 5px solid #68d391;
+}
+
+.decision.rendah {
+  background: #ebf8ff;
+  border-left: 5px solid #63b3ed;
+}
+
+.decision h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.decision p {
+  font-size: 0.83rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ── Table ── */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+th {
+  text-align: left;
+  padding: 8px 12px;
+  background: #1a56db;
+  color: white;
+  font-weight: 600;
+}
+
+td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #f0f4f8;
+}
+
+tr:hover td {
+  background: #f7fafc;
+}
+
+/* ── Badge ── */
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.badge-blue {
+  background: #ebf8ff;
+  color: #2b6cb0;
+}
+
+.badge-green {
+  background: #f0fff4;
+  color: #276749;
+}
+
+/* ── Chart card ── */
+.chart-card {
+  background: white;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+  margin-bottom: 0.5rem;
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #bbb;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .grid3,
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    padding: 1rem;
+  }
+}
